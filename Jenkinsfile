@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''cd HighScoresServiceClient
-mvn install'''
+        sh 'cd HighScoresServiceClient & mvn install'
       }
     }
   }
